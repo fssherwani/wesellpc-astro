@@ -1,16 +1,21 @@
 import { defineConfig } from 'astro/config';
-import tailwind from '@astrojs/tailwind';
+import tailwindcss from '@tailwindcss/vite';
+// IMPORTING THE MISSING REACT COMPILER HOOKS
+import react from '@astrojs/react';
 
-// Configured specifically for your GitHub Pages sub-folder path layout
 export default defineConfig({
-  // Tells Astro to look inside your specific folder repository link
-  base: '/wesellpc-astro/',
+  // Preserves your proper GitHub sub-folder link structure
+  base: '/',
   
-  // Directs compilation assets to relative paths so they never break in the cloud
   build: {
     assets: '_astro'
   },
   
-  // Keeps the built-in design library running smoothly
-  integrations: [tailwind()]
+  // 1. INJECTS THE REACT RENDERER SO THE NAVBAR LOADS SMOOTHLY
+  integrations: [react()],
+  
+  // 2. KEEPS TAILWIND V4 COMPILING LIGHTNING-FAST
+  vite: {
+    plugins: [tailwindcss()]
+  }
 });

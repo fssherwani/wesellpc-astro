@@ -11,17 +11,24 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/react": "^4.2.2",
+    "@astrojs/react": "^4.4.2",
+    "@astrojs/tailwind": "^6.0.2",
+    "@tailwindcss/postcss": "^4.3.3",
+    "@tailwindcss/vite": "^4.3.3",
     "@types/react": "^18.0.21",
     "@types/react-dom": "^18.0.6",
     "astro": "^7.3.3",
     "forward-ref": "^1.0.0",
     "json-server": "^0.17.0",
-    "react": "^18.2.0",
+    "react": "^18.3.1",
     "react-bootstrap": "^2.6.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.3.1",
+    "tailwindcss": "^4.3.3"
   },
   "devDependencies": {
     "sass": "^1.55.0"
+  },
+  "allowScripts": {
+    "@tailwindcss/vite@4.3.3": true
   }
 }
