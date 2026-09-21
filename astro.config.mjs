@@ -1,11 +1,16 @@
 import { defineConfig } from 'astro/config';
+import tailwind from '@astrojs/tailwind';
 
-// https://astro.build/config
-import react from "@astrojs/react";
-
-// https://astro.build/config
+// Configured specifically for your GitHub Pages sub-folder path layout
 export default defineConfig({
-  integrations: [react()],
-  site: 'https://creativetimofficial.github.io',
-  base: '/'
+  // Tells Astro to look inside your specific folder repository link
+  base: '/wesellpc-astro/',
+  
+  // Directs compilation assets to relative paths so they never break in the cloud
+  build: {
+    assets: '_astro'
+  },
+  
+  // Keeps the built-in design library running smoothly
+  integrations: [tailwind()]
 });
