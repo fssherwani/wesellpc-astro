@@ -5,10 +5,10 @@ import react from '@astrojs/react';
 
 export default defineConfig({
   // Preserves your proper GitHub sub-folder link structure
-  base: '/',
-  
+  base: '/wesellpc-astro',
+    
   build: {
-    assets: '_astro'
+    assets: '/_astro'
   },
   
   // 1. INJECTS THE REACT RENDERER SO THE NAVBAR LOADS SMOOTHLY

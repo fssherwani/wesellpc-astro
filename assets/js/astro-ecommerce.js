@@ -10,7 +10,6 @@
 // =========================================================
 //
 // * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
 "use strict";
 (function() {
   var isWindows = navigator.platform.indexOf('Win') > -1 ? true : false;
@@ -27,10 +26,10 @@
       var ps1 = new PerfectScrollbar(sidebar);
     };
 
-    if (document.getElementsByClassName('navbar-collapse')[0]) {
-      var fixedplugin = document.querySelector('.navbar:not(.navbar-expand-lg) .navbar-collapse');
-      var ps2 = new PerfectScrollbar(fixedplugin);
-    };
+  //  if (document.getElementsByClassName('navbar-collapse')[0]) {
+  //    var fixedplugin = document.querySelector('.navbar:not(.navbar-expand-lg) .navbar-collapse');
+  //   var ps2 = new PerfectScrollbar(fixedplugin);
+  //  };
 
     if (document.getElementsByClassName('fixed-plugin')[0]) {
       var fixedplugin = document.querySelector('.fixed-plugin');
