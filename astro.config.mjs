@@ -8,7 +8,7 @@ export default defineConfig({
   base: '/wesellpc-astro',
     
   build: {
-    assets: '/_astro'
+    assets: '_astro'
   },
   
   // 1. INJECTS THE REACT RENDERER SO THE NAVBAR LOADS SMOOTHLY
